@@ -8,44 +8,51 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <div class="left-side">
-        <div class="banner"></div>
-        <div class="background"></div>
-    </div>
-    <div class="right-side">
-        <div class="pitch"></div>
-            <h2>This is a totally real online service! You know you have a <br> sister's uncles cousin who is a prince of Noway in desperate need of your help!<br> Please help me, i mean him, by filling out the information below. Many blessings, your majesty.</h2>
-        <div class="form"></div>
-            <h2 class="form-call-to-action">This is Super Real</h2>
-            <form id="form-input" action="./" method="post" class="form-input">
-                <div>
-                    <label for="firstname">First Name *</label>
-                    <input type="text" autocomplete="name" id="firstname" name="firstname" required/>
-                </div>
-                <div>
-                    <label for="lastname">Last Name *</label>
-                    <input type="text" autocomplete="name" id="lastname" name="lastname" required/>
-                </div>
-                <div>
-                    <label for="email">Email *</label>
-                    <input type="email" autocomplete="email" id="email" name="email" required/>
-                </div>
-                <div>
-                    <label for="phone-number">Phone Number *</label>
-                    <input type="tel" autocomplete="tel" id="tel" name="tel" required/>
-                </div>
-                    <label for="pwd">Password *</label>
-                    <input type="password" id="pwd" name="pwd" required/>
-                </div>
+
+    <div class="main">
+        <div class="left-side"></div>
+        <div class="right-side">
+            <div class="pitch"></div>
+                <h2>This is a totally real online service! You know you have a sister's uncles cousin who is a prince of Noway in desperate need of your help! Please help me, i mean him, by filling out the information below. <br>Many blessings, your royalty.</h2>
+            <div class="form">
+                <h2 class="form-call-to-action">This is Super Real</h2>
+                <form id="form-input" action="" method="" class="form-input">
+                    <div class="input">
+                        <label for="firstname">First Name *</label>
+                        <input type="text" autocomplete="name" id="firstname" name="firstname" required/>
+                    </div>
+                    <div class="input">
+                        <label for="lastname">Last Name *</label>
+                        <input type="text" autocomplete="name" id="lastname" name="lastname" required/>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email *</label>
+                        <input type="email" autocomplete="email" id="email" name="email" required/>
+                    </div>
+                    <div class="input">
+                        <label for="phone-number">Phone Number *</label>
+                        <input type="tel" autocomplete="tel" id="tel" name="tel" required/>
+                    <div class="input">
+                        <label for="pwd">Password *</label>
+                        <input type="password" id="pwd" name="pwd" onkeyup="check();" required/>
+                        <p id="message"></p>
+                    </div>
+                    <div class="input">
+                        <label for="confirm-pwd">Confirm Password *</label>
+                        <input type="password" id="confirm-pwd" name="confirm-pwd" onkeyup="check();" required/>
+                    </div>
+                    <div class="btn">
+                        <span><h5>This is not legitimate and i cannot believe you fell for this</h5></span>
+                        <button type="submit" id="button">Help Cousin Now</button>
+                    </div>     
+                </form>    
             </div>
-            <label for="confirm-pwd">Confirm Password *</label>
-            <input type="password" id="confirm-pwd" name="confirm-pwd" required/>
         </div>
-        <button type="submit">Help Cousin Now</button>
-            </form>    
-        <div class="footer"></div>
-            <h10><br>This is not legitimate and i cannot belive you fell for this</h10>
     </div>
-    </body>
 </body>
 </html>
+
+<!-- To-Do list -->
+<!-- password match function  w/ color visual -->
+<!-- make it look legitimate - fix layout-->
+<!-- use font in odin project guidelines -->

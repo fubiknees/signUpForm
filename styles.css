@@ -1,3 +1,54 @@
 h1 {
     text-decoration: line-through;
 }
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-side {
+    background-image: url(images/buildings.jpg); 
+    width: 40vw;
+    height: 100vh;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+}
+
+.right-side {
+    width: 65vw;
+}
+
+form {
+    width: auto;
+}
+
+input:focus {
+    border: blue;
+}
+
+input:invalid {
+    border-color: red;
+    border-width: 3px;
+}
+
+input:valid {
+    border-color: green;
+    border-width: 3px;
+}
+
+#message{
+    font-size: 10px;
+    margin: 1px 0px 1px 80px ;
+}
