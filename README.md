@@ -3,7 +3,7 @@
     <img src="https://ccweb.imgix.net/https%3A%2F%2Fwww.classcentral.com%2Fimages%2Flogos%2Fproviders%2Fthe-odin-project-hz.png?auto=format&ixlib=php-4.1.0&s=feaa8845dc8a3dee609e492cdd0759d8" alt="Logo" width="150" height = "45">
   </a>
 
-  <h2 align="center"><b>Sign-up Form</b></h2>
+  <h1 align="center"><b>Sign-up Form</b></h1>
 </div>
 
 <br>
@@ -14,6 +14,7 @@
  <img src="./images/preview.png">
 </div>
 
+* <a href="https://fubiknees.github.io/signUpForm/">View Demo</a>
 <br>
 
 ## Goal
