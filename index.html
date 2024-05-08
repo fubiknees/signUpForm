@@ -8,43 +8,59 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-
     <div class="main">
-        <div class="left-side"></div>
+        <div class="left-side">
+            <div class="header">
+                <p>Photo by <a href="https://unsplash.com/photos/a-narrow-alleyway-between-two-buildings-with-shutters-open-dk5PG6nEBmU">Mat</a></p>
+            </div>
+            <div class="banner">
+                <img src="./logo/odin-lined.png" alt="odin project logo" height="115px" id="image">
+                <p class="odin-text">ODIN</p>
+            </div>
+        </div>
         <div class="right-side">
             <div class="pitch"></div>
-                <h2>This is a totally real online service! You know you have a sister's uncles cousin who is a prince of Noway in desperate need of your help! Please help me, i mean him, by filling out the information below. <br>Many blessings, your royalty.</h2>
+                <h3>This is a completely real online service. You should be aware that you have a sister's uncle's cousin, who is the prince of Noway, in desperate need of your help! Please help me—I mean him—by filling out the information below.
+                    <br><br>Many blessings, your royalty.</h3>
             <div class="form">
-                <h2 class="form-call-to-action">This is Super Real</h2>
                 <form id="form-input" action="" method="" class="form-input">
-                    <div class="input">
-                        <label for="firstname">First Name *</label>
-                        <input type="text" autocomplete="name" id="firstname" name="firstname" required/>
+                    <div class="input-all">
+                        <div class="input-row-one">
+                            <div class="input">
+                                <label for="firstname">First Name *</label>
+                                <input type="text" autocomplete="name" id="firstname" name="firstname" required/>
+                            </div>
+                            <div class="input">
+                                <label for="email">Email *</label>
+                                <input type="email" autocomplete="email" id="email" name="email" required/>
+                            </div>
+                            <div class="input">
+                                <label for="pwd">Password *</label>
+                                <input type="password" id="pwd" name="pwd" onkeyup="check();" required/>
+                                <p id="message"></p>
+                            </div>
+                        </div>
+
+                        <div class="input-row-two">
+                            <div class="input">
+                                <label for="lastname">Last Name *</label>
+                                <input type="text" autocomplete="name" id="lastname" name="lastname" required/>
+                            </div>
+                            
+                            <div class="input">
+                                <label for="phone-number">Phone Number *</label>
+                                <input type="tel" autocomplete="tel" id="tel" name="tel" required/>
+                            </div>
+                            <div class="input">
+                                <label for="confirm-pwd">Confirm Password *</label>
+                                <input type="password" id="confirm-pwd" name="confirm-pwd" onkeyup="check();" required/>
+                            </div>
+                        </div>  
+                    </div> 
+                    <div class="button"> 
+                        <span><h5>This is not legitimate and I cannot believe you fell for this</h5></span>
+                        <button type="submit" id="button-green" name="button-green">Help Cousin Now</button>
                     </div>
-                    <div class="input">
-                        <label for="lastname">Last Name *</label>
-                        <input type="text" autocomplete="name" id="lastname" name="lastname" required/>
-                    </div>
-                    <div class="input">
-                        <label for="email">Email *</label>
-                        <input type="email" autocomplete="email" id="email" name="email" required/>
-                    </div>
-                    <div class="input">
-                        <label for="phone-number">Phone Number *</label>
-                        <input type="tel" autocomplete="tel" id="tel" name="tel" required/>
-                    <div class="input">
-                        <label for="pwd">Password *</label>
-                        <input type="password" id="pwd" name="pwd" onkeyup="check();" required/>
-                        <p id="message"></p>
-                    </div>
-                    <div class="input">
-                        <label for="confirm-pwd">Confirm Password *</label>
-                        <input type="password" id="confirm-pwd" name="confirm-pwd" onkeyup="check();" required/>
-                    </div>
-                    <div class="btn">
-                        <span><h5>This is not legitimate and i cannot believe you fell for this</h5></span>
-                        <button type="submit" id="button">Help Cousin Now</button>
-                    </div>     
                 </form>    
             </div>
         </div>
@@ -53,6 +69,8 @@
 </html>
 
 <!-- To-Do list -->
-<!-- password match function  w/ color visual -->
+<!--DONE------password match function  w/ color visual ---->
 <!-- make it look legitimate - fix layout-->
-<!-- use font in odin project guidelines -->
+    <!--input spacing more consistent regardless of window size -->
+<!--DONE------ use font in odin project guidelines--check-->
+<!--DONE------- add odin logo over left background image -->

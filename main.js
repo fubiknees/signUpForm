@@ -1,4 +1,4 @@
-let btn = document.getElementById("button");
+// let btn = document.getElementById("button");
 
 let check = function(){
     let pwd1 = document.getElementById("pwd").value;
