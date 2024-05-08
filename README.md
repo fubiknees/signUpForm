@@ -14,7 +14,7 @@
  <img src="./images/preview.png">
 </div>
 
-* <a href="https://fubiknees.github.io/signUpForm/">View Demo</a>
+<a href="https://fubiknees.github.io/signUpForm/">View Demo</a>
 <br>
 
 ## Goal
